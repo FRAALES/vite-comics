@@ -61,8 +61,8 @@ export default {
 
 
 <style lang="scss" scoped>
-@use '../styles/partials/variables.scss' as *;
-@use '../styles/partials/mixins.scss' as *;
+@use './styles/partials/variables.scss' as *;
+@use './styles/partials/mixins.scss' as *;
 
 #content {
     height: 100px;
