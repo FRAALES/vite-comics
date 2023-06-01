@@ -1,5 +1,11 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  components: {
+    HelloWorld
+  }
+}
 </script>
 
 <template>
@@ -10,3 +16,4 @@ import HelloWorld from './components/HelloWorld.vue'
 @use './styles/partials/variables';
 @use './styles/general.scss' as *;
 </style>
+
