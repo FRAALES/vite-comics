@@ -1,19 +1,25 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './components/AppHeader.vue'
+import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
 
 export default {
   components: {
-    HelloWorld
+    AppHeader,
+    AppMain,
+    AppFooter,
   }
 }
 </script>
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
+  <AppHeader />
+  <AppMain />
+  <AppFooter />
 </template>
 
 <style lang="scss">
-@use './styles/partials/variables';
+@use './styles/partials/variables.scss' as *;
 @use './styles/general.scss' as *;
 </style>
 
