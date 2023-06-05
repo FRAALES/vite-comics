@@ -68,8 +68,8 @@ export default {
             </div>
             <nav>
                 <ul>
-                    <li v-for="link in links">
-                        <a :class="link.current ? 'active' : ''" :href="link.url">{{ links.text }}</a>
+                    <li v-for="(link, i) in links" :key="i">
+                        <a :class="link.current ? 'active' : ''" :href="link.url">{{ link.text }}</a>
                     </li>
                 </ul>
             </nav>
@@ -78,8 +78,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use './styles/partials/variables.scss' as *;
-@use './styles/partials/mixins.scss' as *;
+@use '../styles/partials/variables.scss' as *;
+@use '../styles/partials/mixins.scss' as *;
 
 header {
     height: 100px;
